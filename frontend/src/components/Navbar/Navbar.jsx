@@ -43,7 +43,7 @@ const Navbar = () => {
             src="https://cdn-icons-png.flaticon.com/128/10433/10433049.png"
             alt="logo"
           />
-          <h1 className="font-semibold text-2xl">BookTopia</h1>
+          <h1 className="font-semibold text-2xl">E-commerce Bookstore</h1>
         </Link>
         <div className="nav-links-booktopia block md:flex items-center gap-4">
           <div className="hidden md:flex gap-4">

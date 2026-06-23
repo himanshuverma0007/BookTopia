@@ -4,6 +4,7 @@ const authentication = (req, res, next) =>{
 
     // Extracting the Token from the Request Header:
     const authHeader = req.headers["authorization"];
+    // console.log(authHeader)
     const token = authHeader && authHeader.split(" ")[1];
 
     // Checking if the Token Exists:
@@ -16,6 +17,7 @@ const authentication = (req, res, next) =>{
         if(err){
             return res.status(403).json({message: "Token expired. Please signIn again."})
         }
+        console.log(user);
         req.user = user;
         next();
     })
